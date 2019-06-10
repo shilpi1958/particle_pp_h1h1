@@ -1,0 +1,99 @@
+ *****************************************************
+ *                   MadAnalysis                     *
+ *               a MadEvent program                  *
+ *    for making plots and do simple analysis for    *
+ *            LHE and LHCO event files               *
+ *        ---------------------------------          *
+ *        Version compliant with MG_ME_V4.0          *
+ *                                                   *
+ *       Authors: R. Frederix and F. Maltoni         *
+ *                                                   *
+ *         Last Update by R.F., 23-Feb-2006          *
+ *****************************************************
+  
+ input name of event file:
+ -------------------------
+Found Les Houches Event File 
+    output file: plots.top                                                                                                                                                                                               
+ Classes will be read from file: ./ma_card.dat
+ Found the following classes in input classes file:
+  class # 0 is   mET   12 -12  14 -14  16 -16 122
+  class # 1 is   jet    1  -1   2  -2   3  -3   4  -4  21
+  class # 2 is   b      5  -5
+ Now start parsing events a first time
+ created new class h1  for particle          25
+ Setting up graphs
+           8  plots set up
+ Setting up acceptance cuts
+ Cuts set up
+ SEE plots.log FOR MORE INFO
+ Now parsing events to fill histograms
+ At event         1000
+ At event         2000
+ At event         3000
+ At event         4000
+ At event         5000
+ At event         6000
+ At event         7000
+ At event         8000
+ At event         9000
+ At event        10000
+  
+ ----------------------------------------------
+               events information              
+ ----------------------------------------------
+  
+   Events in file               :         10000
+   Integrated weight (pb)       :     11973000.000001309     
+   Max wgt                      :     1197.3000000000000     
+   Average wgt                  :     1197.3000000001309     
+  
+   Passing the cuts (plotted)
+   --------------------------
+  
+   Events                       :         10000
+   Integrated weight (pb)       :     11973000.000001309     
+   Max wgt                      :     1197.3000000000000     
+   Average wgt                  :     1197.3000000001309     
+plot_events found
+topdrawer found
+epstosmth found
+plot_card found
+cp: '../../../Cards/plot_card.dat' and './ma_card.dat' are the same file
+end plot_events
+ Plot  1 Done.
+ Plot  2 Done.
+ Plot  3 Done.
+ Plot  4 Done.
+ Plot  5 Done.
+ Plot  6 Done.
+ Plot  7 Done.
+ Plot  8 Done.
+ Plot  9 Done.
+csplit: ‘/   NEW PLOT/’: match not found on repetition 8
+ Plot  1 Done.
+ Plot  0 Done.
+ Plot  1 Done.
+ Plot  0 Done.
+ Plot  1 Done.
+ Plot  0 Done.
+ Plot  1 Done.
+ Plot  0 Done.
+ Plot  1 Done.
+ Plot  0 Done.
+ Plot  1 Done.
+ Plot  0 Done.
+ Plot  1 Done.
+ Plot  0 Done.
+ Plot  1 Done.
+ Plot  0 Done.
+ Plot  1 Done.
+==> Warning: BoundingBox not found!
+./plots_parton/ma_plot000.jpg
+./plots_parton/ma_plot001.jpg
+./plots_parton/ma_plot002.jpg
+./plots_parton/ma_plot003.jpg
+./plots_parton/ma_plot004.jpg
+./plots_parton/ma_plot005.jpg
+./plots_parton/ma_plot006.jpg
+./plots_parton/ma_plot007.jpg

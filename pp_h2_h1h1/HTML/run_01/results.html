@@ -1,0 +1,82 @@
+
+<head>
+    <title>Process results</title>
+    <script type="text/javascript" src="../sortable.js"></script>
+    <link rel=stylesheet href="../mgstyle.css" type="text/css">
+</head>
+<body>
+<script type="text/javascript">
+function UrlExists(url) {
+  var http = new XMLHttpRequest();
+  http.open('HEAD', url, false);
+  try{
+     http.send()
+     }
+  catch(err){
+   return 1==2;
+  }
+  return http.status!=404;
+}
+function check_link(url,alt, id){
+    var obj = document.getElementById(id);
+    if ( ! UrlExists(url)){
+        if ( ! UrlExists(alt)){
+         obj.href = alt;
+         return true;
+        }
+       obj.href = alt;
+       return false;
+    }
+    obj.href = url;
+    return 1==1;
+}
+</script>
+  
+
+ <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>s= 1197.3 &#177 1.2 (pb)</b><br><br>
+<table class="sortable" id='tablesort'>
+<tr><th>Graph</th>
+    <th> Cross-Section</th>
+    <th>Error</th>
+    <th>Events (K)</th>
+    <th>Unwgt</th>
+    <th>Luminosity</th>
+</tr>
+
+<tr><td align=right>/home/shilpi/MG5_aMC_v2_6_1/pp_h2_h1h1/SubProcesses/P1_qq_h1h1</td>
+    <td align=right><a id="#/home/shilpi/MG5_aMC_v2_6_1/pp_h2_h1h1/SubProcesses/P1_qq_h1h1" href=#/home/shilpi/MG5_aMC_v2_6_1/pp_h2_h1h1/SubProcesses/P1_qq_h1h1 onClick="check_link('#/home/shilpi/MG5_aMC_v2_6_1/pp_h2_h1h1/SubProcesses/P1_qq_h1h1','#/home/shilpi/MG5_aMC_v2_6_1/pp_h2_h1h1/SubProcesses/P1_qq_h1h1','#/home/shilpi/MG5_aMC_v2_6_1/pp_h2_h1h1/SubProcesses/P1_qq_h1h1')"> 1197 </a> </td>
+    <td align=right>  1.2</td>
+    <td align=right>  223.224</td>
+    <td align=right>  12748.0</td>
+    <td align=right>  0</td>
+</tr>
+
+</table>
+</center>
+<br><br><br>
+ <dl>  
+
+ <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>s= 1197.3 &#177 1.2 (pb)</b><br><br>
+<table class="sortable" id='tablesort'>
+<tr><th>Graph</th>
+    <th> Cross-Section</th>
+    <th>Error</th>
+    <th>Events (K)</th>
+    <th>Unwgt</th>
+    <th>Luminosity</th>
+</tr>
+
+<tr><td align=right>G1</td>
+    <td align=right><a id="/home/shilpi/MG5_aMC_v2_6_1/pp_h2_h1h1/SubProcesses/P1_qq_h1h1/../../SubProcesses/P1_qq_h1h1/G1/run1_app.log" href=/home/shilpi/MG5_aMC_v2_6_1/pp_h2_h1h1/SubProcesses/P1_qq_h1h1/../../SubProcesses/P1_qq_h1h1/G1/run1_app.log onClick="check_link('/home/shilpi/MG5_aMC_v2_6_1/pp_h2_h1h1/SubProcesses/P1_qq_h1h1/../../SubProcesses/P1_qq_h1h1/G1/run1_app.log','../../SubProcesses/P1_qq_h1h1/G1/log.txt','/home/shilpi/MG5_aMC_v2_6_1/pp_h2_h1h1/SubProcesses/P1_qq_h1h1/../../SubProcesses/P1_qq_h1h1/G1/run1_app.log')"> 1197 </a> </td>
+    <td align=right>  1.2</td>
+    <td align=right>  223.224</td>
+    <td align=right>  12748.0</td>
+    <td align=right>  10.6</td>
+</tr>
+
+</table>
+</center>
+<br><br><br>
+ </dl></body>
