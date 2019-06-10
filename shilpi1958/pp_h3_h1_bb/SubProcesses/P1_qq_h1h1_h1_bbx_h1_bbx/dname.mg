@@ -1,1 +1,0 @@
-DIRNAME=P1_qq_h1h1_h1_bbx_h1_bbx
