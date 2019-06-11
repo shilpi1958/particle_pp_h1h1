@@ -220,9 +220,9 @@ for i in phi_bbar:
 
 
 
-h_mass_pho=TH1F("Mass of h","",5,100,200)
+h_mass_pho=TH1F("Mass of h","",100,100,150)
 for i in m_h_pho:
-    h_mass.Fill(i)
+    h_mass_pho.Fill(i)
 
 h_phi_pho=TH1F("Phi of h","",10,-5,5)
 for i in phi_h_pho:
@@ -346,7 +346,6 @@ h_phibbar.SetYTitle("Events")
 h_phibbar.Draw()
 cmsname.Draw()
 c.SaveAs("Phibbar of h1.png")
-
 
 
 
