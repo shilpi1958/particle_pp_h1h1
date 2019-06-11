@@ -30,10 +30,10 @@ eta_phobar=[]
 e_pho=[]
 e_phobar=[]
 DR_pho=[]
-m_h_pho=[]
-phi_h_pho=[]
-eta_h_pho=[]
-pt_h_pho=[]
+m_h1_pho_reconstructed=[]
+phi_h1_pho_reconstructed=[]
+eta_h1_pho_reconstructed=[]
+pt_h1_pho_reconstructed=[]
 
 p3=[]
 p4=[]
@@ -135,11 +135,11 @@ for child in root1:
        if pho and phobar:
 	   pb=[]
 	   pb=p3+p4
-	   m_h_pho.append(pb.M())
+	   m_h1_pho_reconstructed.append(pb.M())
 	   DR_pho.append(abs(p3.DeltaR(p4)))
-	   phi_h_pho.append(pb.Phi())
-	   eta_h_pho.append(pb.Eta())
-	   pt_h_pho.append(pb.Pt())
+	   phi_h1_pho_reconstructed.append(pb.Phi())
+	   eta_h1_pho_reconstructed.append(pb.Eta())
+	   pt_h1_pho_reconstructed.append(pb.Pt())
 
 
 '''
@@ -221,11 +221,11 @@ for i in phi_bbar:
 
 
 h_mass_pho=TH1F("Mass of h","",5,100,200)
-for i in m_h_pho:
+for i in m_h1_pho_reconstructed:
     h_mass.Fill(i)
 
 h_phi_pho=TH1F("Phi of h","",10,-5,5)
-for i in phi_h_pho:
+for i in phi_h1_pho_reconstructed:
     h_phi_pho.Fill(i)
 
 h_eta_pho=TH1F("Eta of h","",10,-8,8)
@@ -233,7 +233,7 @@ for i in eta_pho:
         h_eta_pho.Fill(i)
 
 h_pt_pho=TH1F("pT of h","",100,-10,500)
-for i in pt_h_pho:
+for i in pt_h1_pho_reconstructed:
         h_pt_pho.Fill(i)
 
 h1_DR_pho=TH1F("DR(b,bbar)","",5,-2,8)
@@ -352,35 +352,35 @@ c.SaveAs("Phibbar of h1.png")
 
 
 
-h_mass_pho.SetXTitle("Mass of h1_pho[GeV]")
+h_mass_pho.SetXTitle("Mass of h1_pho_reconstructed[GeV]")
 h_mass_pho.SetYTitle("Events")
 h_mass_pho.Draw()
 cmsname.Draw()
-c.SaveAs("mass of h_pho.png")
+c.SaveAs("mass of h1_pho_reconstructed.png")
 
-h_phi_pho.SetXTitle("Phi of h1_pho")
+h_phi_pho.SetXTitle("Phi of h1_pho_reconstructed")
 h_phi_pho.SetYTitle("Events")
 h_phi_pho.Draw()
 cmsname.Draw()
-c.SaveAs("phi of h_pho.png")
+c.SaveAs("phi of h1_pho_reconstructed.png")
 
-h_eta_pho.SetXTitle("Eta of h1_pho")
+h_eta_pho.SetXTitle("Eta of h1_pho_reconstructed")
 h_eta_pho.SetYTitle("Events")
 h_eta_pho.Draw()
 cmsname.Draw()
-c.SaveAs("eta of h1_pho.png")
+c.SaveAs("eta of h1_pho_reconstructed.png")
 
-h_pt_pho.SetXTitle("Pt of h1_pho")
+h_pt_pho.SetXTitle("Pt of h1_pho_reconstructed")
 h_pt_pho.SetYTitle("Events")
 h_pt_pho.Draw()
 cmsname.Draw()
-c.SaveAs("pt of h_pho.png")
+c.SaveAs("pt of h1_pho_reconstructed.png")
 
 h1_DR_pho.SetXTitle("#DeltaR(pho,phobar)")
 h1_DR_pho.SetYTitle("Events")
 h1_DR_pho.Draw()
 cmsname.Draw()
-c.SaveAs("DR for h_pho.png")
+c.SaveAs("DR for h1_pho_reconstructed.png")
 
 h_e_pho.SetXTitle("Energy of pho from h")
 h_e_pho.SetYTitle("Events")
@@ -392,19 +392,19 @@ h_pt_pho.SetXTitle("pT of pho from h")
 h_pt_pho.SetYTitle("Events")
 h_pt_pho.Draw()
 cmsname.Draw()
-c.SaveAs("ptb of pho.png")
+c.SaveAs("pt of pho.png")
 
 h_eta_pho.SetXTitle("Eta of pho from h")
 h_eta_pho.SetYTitle("Events")
 h_eta_pho.Draw()
 cmsname.Draw()
-c.SaveAs("etab of pho.png")
+c.SaveAs("eta of pho.png")
 
 h_phi_pho.SetXTitle("Phi of pho from h")
 h_phi_pho.SetYTitle("Events")
 h_phi_pho.Draw()
 cmsname.Draw()
-c.SaveAs("Phib of pho.png")
+c.SaveAs("Phi of pho.png")
 
 
 #c.BuildLegend(0.3,0.7,0.58,0.9,"(M_{#chi}=1, M_{#phi}=1000)")
