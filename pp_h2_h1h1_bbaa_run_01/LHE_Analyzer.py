@@ -178,7 +178,7 @@ h_pt_h=TH1F("pT of h","",100,-10,500)
 for i in pt_h:
         h_pt_h.Fill(i)
 
-h1_DR=TH1F("DR(b,bbar)","",5,-2,8)
+h1_DR=TH1F("DR(b,bbar)","",50,-2,8)
 for i in DR:
         h1_DR.Fill(i)
 
@@ -236,7 +236,7 @@ h_pt_pho=TH1F("pT of h","",100,-10,500)
 for i in pt_h_pho:
         h_pt_pho.Fill(i)
 
-h1_DR_pho=TH1F("DR(b,bbar)","",5,-2,8)
+h1_DR_pho=TH1F("DR(pho,pho)","",50,-2,8)
 for i in DR_pho:
         h1_DR_pho.Fill(i)
 
@@ -376,7 +376,7 @@ h_pt_pho.Draw()
 cmsname.Draw()
 c.SaveAs("pt of h_pho.png")
 
-h1_DR_pho.SetXTitle("#DeltaR(pho,phobar)")
+h1_DR_pho.SetXTitle("#DeltaR(pho,pho)")
 h1_DR_pho.SetYTitle("Events")
 h1_DR_pho.Draw()
 cmsname.Draw()
