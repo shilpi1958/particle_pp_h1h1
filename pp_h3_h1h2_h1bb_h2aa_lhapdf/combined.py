@@ -140,12 +140,12 @@ for child in root1:
 
 c.SetLogy()
 
-h1=TH1F('Invariant Mass of H1 (#gamma #gamma)',"",1000,0,1200)
-for i in m_1_H1:
+h1=TH1F('Invariant Mass of H2 (#gamma #gamma)',"",1000,0,1200)
+for i in m_1_H2:
         h1.Fill(i)
 
-h14=TH1F('Invariant Mass of H2 (bb~)',"",1000,0,1200)
-for i in m_1_H2:
+h14=TH1F('Invariant Mass of H1 (bb~)',"",1000,0,1200)
+for i in m_1_H1:
         h14.Fill(i)
 
 
