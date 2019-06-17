@@ -317,7 +317,7 @@ tps2.SetY2NDC(Y1)
 
 
 legend=TLegend(0.75,0.75,0.89,0.89)
-legend.SetHeader("Legend")
+
 legend.AddEntry(h1_l1, "h1aa_h2bb", "l")
 legend.AddEntry(h1_l2, "h1bb_h2aa", "l")
 
@@ -334,7 +334,7 @@ c.SaveAs("Mass_combine_h1.png")
 c.SaveAs("Mass_combine_h1.root")
 
 legend=TLegend(0.75,0.75,0.89,0.89)
-legend.SetHeader("Legend")
+
 legend.AddEntry(h14_l1, "h1aa_h2bb", "l")
 legend.AddEntry(h14_l2, "h1bb_h2aa", "l")
 
@@ -351,7 +351,7 @@ c.SaveAs("Mass_combine_h2.png")
 c.SaveAs("Mass_combine_h2.root")
 
 legend=TLegend(0.75,0.75,0.89,0.89)
-legend.SetHeader("Legend")
+
 legend.AddEntry(h2_l1, "h1aa_h2bb", "l")
 legend.AddEntry(h2_l2, "h1bb_h2aa", "l")
 
@@ -368,7 +368,7 @@ c.SaveAs("eta_combine_gamma.png")
 c.SaveAs("eta_combine_gamma.root")
 
 legend=TLegend(0.75,0.75,0.89,0.89)
-legend.SetHeader("Legend")
+
 legend.AddEntry(h3_l1, "h1aa_h2bb", "l")
 legend.AddEntry(h3_l2, "h1bb_h2aa", "l")
 
@@ -385,7 +385,7 @@ c.SaveAs("eta_combine_b.png")
 c.SaveAs("eta_combine_b.root")
 
 legend=TLegend(0.75,0.75,0.89,0.89)
-legend.SetHeader("Legend")
+
 legend.AddEntry(h4_l1, "h1aa_h2bb", "l")
 legend.AddEntry(h4_l2, "h1bb_h2aa", "l")
 
@@ -403,7 +403,7 @@ c.SaveAs("pT_combine_gamma.root")
 
 
 legend=TLegend(0.75,0.75,0.89,0.89)
-legend.SetHeader("Legend")
+
 legend.AddEntry(h5_l1, "h1aa_h2bb", "l")
 legend.AddEntry(h5_l2, "h1bb_h2aa", "l")
 
@@ -421,7 +421,7 @@ c.SaveAs("pT_combine_b.root")
 
 
 legend=TLegend(0.75,0.75,0.89,0.89)
-legend.SetHeader("Legend")
+
 legend.AddEntry(h6_l1, "h1aa_h2bb", "l")
 legend.AddEntry(h6_l2, "h1bb_h2aa", "l")
 
@@ -438,7 +438,7 @@ c.SaveAs("pT_combine_b~.png")
 c.SaveAs("pT_combine_b~.root")
 
 legend=TLegend(0.75,0.75,0.89,0.89)
-legend.SetHeader("Legend")
+
 legend.AddEntry(h7_l1, "h1aa_h2bb", "l")
 legend.AddEntry(h7_l2, "h1bb_h2aa", "l")
 
@@ -455,7 +455,7 @@ c.SaveAs("eta_combine_b~.png")
 c.SaveAs("eta_combine_b~.root")
 
 legend=TLegend(0.75,0.75,0.89,0.89)
-legend.SetHeader("Legend")
+
 legend.AddEntry(h10_l1, "h1aa_h2bb", "l")
 legend.AddEntry(h10_l2, "h1bb_h2aa", "l")
 
@@ -473,7 +473,7 @@ c.SaveAs("phi_combine_gamma.root")
 
 
 legend=TLegend(0.75,0.75,0.89,0.89)
-legend.SetHeader("Legend")
+
 legend.AddEntry(h12_l1, "h1aa_h2bb", "l")
 legend.AddEntry(h12_l2, "h1bb_h2aa", "l")
 
@@ -490,7 +490,7 @@ c.SaveAs("phi_combine_b.png")
 c.SaveAs("phi_combine_b.root")
 
 legend=TLegend(0.75,0.75,0.89,0.89)
-legend.SetHeader("Legend")
+
 legend.AddEntry(h13_l1, "h1aa_h2bb", "l")
 legend.AddEntry(h13_l2, "h1bb_h2aa", "l")
 
@@ -510,7 +510,7 @@ c.SaveAs("phi_combine_b~.root")
 c.SetLogy()
 
 legend=TLegend(0.75,0.75,0.89,0.89)
-legend.SetHeader("Legend")
+
 legend.AddEntry(h4_l1, "h1aa_h2bb", "l")
 legend.AddEntry(h4_l2, "h1bb_h2aa", "l")
 
@@ -528,7 +528,7 @@ c.SaveAs("pT_combine_gamma_log.root")
 
 
 legend=TLegend(0.75,0.75,0.89,0.89)
-legend.SetHeader("Legend")
+
 legend.AddEntry(h5_l1, "h1aa_h2bb", "l")
 legend.AddEntry(h5_l2, "h1bb_h2aa", "l")
 
@@ -546,7 +546,7 @@ c.SaveAs("pT_combine_b_log.root")
 
 
 legend=TLegend(0.75,0.75,0.89,0.89)
-legend.SetHeader("Legend")
+
 legend.AddEntry(h6_l1, "h1aa_h2bb", "l")
 legend.AddEntry(h6_l2, "h1bb_h2aa", "l")
 
