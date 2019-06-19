@@ -295,7 +295,6 @@ for i in phi_bbar_l2:
         h13_l2.Fill(i)
 
 
-
 '''
 tps1=TPaveStats()
 h1.FindObject("stats")
@@ -333,11 +332,13 @@ h1_l1.SetLineColor(6)
 h1_l2.SetXTitle("M_h1_bb [GeV]")
 h1_l2.SetYTitle("events")
 h1_l2.SetLineColor(4)
+h1_l2.GetMean(Int_t axis = 1)
 h1_l1.DrawNormalized("hist")
 h1_l2.DrawNormalized("hist&SAMES")
 c.SaveAs("Mass_combine_h1.png")
 c.SaveAs("Mass_combine_h1.root")
 
+'''
 h14_l1.SetXTitle("M_h2_bb [GeV]")
 h14_l1.SetYTitle("Events")
 h14_l1.SetLineColor(6)
@@ -447,3 +448,40 @@ h13_l1.DrawNormalized("hist")
 h13_l2.DrawNormalized("hist&SAMES")
 c.SaveAs("phi_combine_b~.png")
 c.SaveAs("phi_combine_b~.root")
+
+c.SetLogy()
+
+h5_l1.SetXTitle("#p_{T}_b")
+h5_l1.SetYTitle("Events")
+h5_l1.SetLineColor(6)
+h5_l2.SetXTitle("#p_{T}_b")
+h5_l2.SetYTitle("events")
+h5_l2.SetLineColor(4)
+h5_l1.DrawNormalized("hist")
+h5_l2.DrawNormalized("hist&SAMES")
+c.SaveAs("pT_combine_b_log.png")
+c.SaveAs("pT_combine_b_log.root")
+
+h6_l1.SetXTitle("#p_{T}_b~")
+h6_l1.SetYTitle("Events")
+h6_l1.SetLineColor(6)
+h6_l2.SetXTitle("#p_{T}_b~")
+h6_l2.SetYTitle("events")
+h6_l2.SetLineColor(4)
+h6_l1.DrawNormalized("hist")
+h6_l2.DrawNormalized("hist&SAMES")
+c.SaveAs("pT_combine_b~_log.png")
+c.SaveAs("pT_combine_b~_log.root")
+
+h7_l1.SetXTitle("#eta_{b~}")
+h7_l1.SetYTitle("Events")
+h7_l1.SetLineColor(6)
+h7_l2.SetXTitle("#eta_{b~}")
+h7_l2.SetYTitle("events")
+h7_l2.SetLineColor(4)
+h7_l1.DrawNormalized("hist")
+h7_l2.DrawNormalized("hist&SAMES")
+c.SaveAs("eta_combine_b~_log.png")
+c.SaveAs("eta_combine_b~_log.root")
+
+'''
