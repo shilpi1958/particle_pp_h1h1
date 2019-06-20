@@ -190,7 +190,7 @@ for hist in range(len(hists1)):
         #hists1[hist].SetYRangeUser(0 , .002)
         #hists1[hist].Rebin(5)
         hists1[hist].SetLineWidth(3)
-        #hists1[hist].SetMaximum(2)
+        #hists1[hist].SetMaximum(1000)
         #legend.AddEntry(hists[hist],leg_entry[hist],"L")
         hists1[hist].DrawNormalized('hist')
 
@@ -201,7 +201,7 @@ for hist in range(len(hists1)):
         hists1[hist].SetLineColor(hist+1)
         #hists1[hist].Rebin(5)
         hists1[hist].SetLineWidth(3)
-        #hists1[hist].SetMaximum(2)
+        #hists1[hist].SetMaximum(1000)
         #legend.AddEntry(hists[hist],leg_entry[hist],"L")
         hists1[hist].DrawNormalized('hist&same')
 
@@ -221,7 +221,7 @@ for hist in range(len(hists2)):
         hists2[hist].SetYTitle("")
         hists2[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
-        #hists[hist].SetMaximum(2)
+        #hists[hist].SetMaximum(1000)
         #legend.AddEntry(hists[hist],leg_entry[hist],"L")
         hists2[hist].DrawNormalized('hist')
 
@@ -230,7 +230,7 @@ for hist in range(len(hists2)):
         hists2[hist].SetYTitle("")
         hists2[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
-        #hists[hist].SetMaximum(2)
+        #hists[hist].SetMaximum(1000)
         #legend.AddEntry(hists[hist],leg_entry[hist],"L")
         hists2[hist].DrawNormalized('hist&same')
 
@@ -246,20 +246,17 @@ for hist in range(len(hists3)):
         hists3[hist].SetYTitle("")
         hists3[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
-        #hists[hist].SetMaximum(2)
+        #hists[hist].SetMaximum(1000)
         #legend.AddEntry(hists[hist],leg_entry[hist],"L")
         hists3[hist].DrawNormalized('hist')
 
     else:
         hists3[hist].SetXTitle("#phi_(b)")
-<<<<<<< HEAD
         hists3[hist].SetYTitle("")
-=======
         hists3[hist].SetYTitle("Events")
->>>>>>> 0cf05a0add18ff3b407458bfc64069c1a2f94d77
         hists3[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
-        #hists[hist].SetMaximum(2)
+        #hists[hist].SetMaximum(1000)
         #legend.AddEntry(hists[hist],leg_entry[hist],"L")
         hists3[hist].DrawNormalized('hist&same')
 
@@ -275,7 +272,7 @@ for hist in range(len(hists4)):
         hists4[hist].SetYTitle("")
         hists4[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
-        #hists[hist].SetMaximum(2)
+        hists4[hist].SetMaximum(500)
         #legend.AddEntry(hists[hist],leg_entry[hist],"L")
         hists4[hist].DrawNormalized('hist')
 
@@ -284,7 +281,7 @@ for hist in range(len(hists4)):
         hists4[hist].SetYTitle("")
         hists4[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
-        #hists[hist].SetMaximum(2)
+        hists4[hist].SetMaximum(500)
         #legend.AddEntry(hists[hist],leg_entry[hist],"L")
         hists4[hist].DrawNormalized('hist&same')
 
@@ -300,7 +297,7 @@ for hist in range(len(hists5)):
         hists5[hist].SetYTitle("")
         hists5[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
-        #hists[hist].SetMaximum(2)
+        hists5[hist].SetMaximum(1000)
         #legend.AddEntry(hists[hist],leg_entry[hist],"L")
         hists5[hist].DrawNormalized('hist')
 
@@ -309,7 +306,7 @@ for hist in range(len(hists5)):
         hists5[hist].SetYTitle("")
         hists5[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
-        #hists[hist].SetMaximum(2)
+        hists5[hist].SetMaximum(1000)
         #legend.AddEntry(hists[hist],leg_entry[hist],"L")
         hists5[hist].DrawNormalized('hist&same')
 
@@ -325,7 +322,7 @@ for hist in range(len(hists6)):
         hists6[hist].SetYTitle("")
         hists6[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
-        #hists[hist].SetMaximum(2)
+        #hists[hist].SetMaximum(1000)
         #legend.AddEntry(hists[hist],leg_entry[hist],"L")
         hists6[hist].DrawNormalized('hist')
 
@@ -334,7 +331,7 @@ for hist in range(len(hists6)):
         hists6[hist].SetYTitle("")
         hists6[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
-        #hists[hist].SetMaximum(2)
+        #hists[hist].SetMaximum(1000)
         #legend.AddEntry(hists[hist],leg_entry[hist],"L")
         hists6[hist].DrawNormalized('hist&same')
 
@@ -350,7 +347,7 @@ for hist in range(len(hists7)):
         hists7[hist].SetYTitle("")
         hists7[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
-        #hists[hist].SetMaximum(2)
+        hists7[hist].SetMaximum(500)
         #legend.AddEntry(hists[hist],leg_entry[hist],"L")
         hists7[hist].DrawNormalized('hist')
 
@@ -359,7 +356,7 @@ for hist in range(len(hists7)):
         hists7[hist].SetYTitle("")
         hists7[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
-        #hists[hist].SetMaximum(2)
+        hists7[hist].SetMaximum(500)
         #legend.AddEntry(hists[hist],leg_entry[hist],"L")
         hists7[hist].DrawNormalized('hist&same')
 
@@ -375,7 +372,7 @@ for hist in range(len(hists8)):
         hists8[hist].SetYTitle("")
         hists8[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
-        #hists[hist].SetMaximum(2)
+        hists8[hist].SetMaximum(1000)
         #legend.AddEntry(hists[hist],leg_entry[hist],"L")
         hists8[hist].DrawNormalized('hist')
 
@@ -384,7 +381,7 @@ for hist in range(len(hists8)):
         hists8[hist].SetYTitle("")
         hists8[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
-        #hists[hist].SetMaximum(2)
+        hists8[hist].SetMaximum(1000)
         #legend.AddEntry(hists[hist],leg_entry[hist],"L")
         hists8[hist].DrawNormalized('hist&same')
 
@@ -400,7 +397,7 @@ for hist in range(len(hists9)):
         hists9[hist].SetYTitle("")
         hists9[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
-        #hists[hist].SetMaximum(2)
+        #hists[hist].SetMaximum(1000)
         #legend.AddEntry(hists[hist],leg_entry[hist],"L")
         hists9[hist].DrawNormalized('hist')
 
@@ -409,7 +406,7 @@ for hist in range(len(hists9)):
         hists9[hist].SetYTitle("")
         hists9[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
-        #hists[hist].SetMaximum(2)
+        #hists[hist].SetMaximum(1000)
         #legend.AddEntry(hists[hist],leg_entry[hist],"L")
         hists9[hist].DrawNormalized('hist&same')
 
@@ -425,7 +422,7 @@ for hist in range(len(hists10)):
         hists10[hist].SetYTitle("")
         hists10[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
-        #hists[hist].SetMaximum(2)
+        hists10[hist].SetMaximum(500)
         #legend.AddEntry(hists[hist],leg_entry[hist],"L")
         hists10[hist].DrawNormalized('hist')
 
@@ -434,7 +431,7 @@ for hist in range(len(hists10)):
         hists10[hist].SetYTitle("")
         hists10[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
-        #hists[hist].SetMaximum(2)
+        hists10[hist].SetMaximum(500)
         #legend.AddEntry(hists[hist],leg_entry[hist],"L")
         hists10[hist].DrawNormalized('hist&same')
 
@@ -450,7 +447,7 @@ for hist in range(len(hists11)):
         hists11[hist].SetYTitle("")
         hists11[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
-        #hists[hist].SetMaximum(2)
+        hists11[hist].SetMaximum(1000)
         #legend.AddEntry(hists[hist],leg_entry[hist],"L")
         hists11[hist].DrawNormalized('hist')
 
@@ -459,7 +456,7 @@ for hist in range(len(hists11)):
         hists11[hist].SetYTitle("")
         hists11[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
-        #hists[hist].SetMaximum(2)
+        hists11[hist].SetMaximum(1000)
         #legend.AddEntry(hists[hist],leg_entry[hist],"L")
         hists11[hist].DrawNormalized('hist&same')
 
