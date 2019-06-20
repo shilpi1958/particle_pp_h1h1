@@ -185,7 +185,7 @@ for hist in range(len(hists1)):
     print(hist)
     if hist==0:
         hists1[hist].SetXTitle("M_{#gamma#gamma} [GeV]")
-        hists1[hist].SetYTitle("Events")
+        hists1[hist].SetYTitle("")
         hists1[hist].SetLineColor(hist+1)
         #hists1[hist].SetYRangeUser(0 , .002)
         #hists1[hist].Rebin(5)
@@ -197,7 +197,7 @@ for hist in range(len(hists1)):
 
     else:
         hists1[hist].SetXTitle("M_{#gamma#gamma} [GeV]")
-        hists1[hist].SetYTitle("Events")
+        hists1[hist].SetYTitle("")
         hists1[hist].SetLineColor(hist+1)
         #hists1[hist].Rebin(5)
         hists1[hist].SetLineWidth(3)
@@ -218,7 +218,7 @@ for hist in range(len(hists2)):
     print(hist)
     if hist==0:
         hists2[hist].SetXTitle("M_{bb~} [GeV]")
-        hists2[hist].SetYTitle("Events")
+        hists2[hist].SetYTitle("")
         hists2[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
         #hists[hist].SetMaximum(2)
@@ -227,7 +227,7 @@ for hist in range(len(hists2)):
 
     else:
         hists2[hist].SetXTitle("M_{bb~} [GeV]")
-        hists2[hist].SetYTitle("Events")
+        hists2[hist].SetYTitle("")
         hists2[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
         #hists[hist].SetMaximum(2)
@@ -243,7 +243,7 @@ for hist in range(len(hists3)):
     print(hist)
     if hist==0:
         hists3[hist].SetXTitle("#phi_(b)")
-        hists3[hist].SetYTitle("Events")
+        hists3[hist].SetYTitle("")
         hists3[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
         #hists[hist].SetMaximum(2)
@@ -252,12 +252,12 @@ for hist in range(len(hists3)):
 
     else:
         hists3[hist].SetXTitle("#phi_(b)")
-        hists4[hist].SetYTitle("Events")
-        hists4[hist].SetLineColor(hist+1)
+        hists3[hist].SetYTitle("")
+        hists3[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
         #hists[hist].SetMaximum(2)
         #legend.AddEntry(hists[hist],leg_entry[hist],"L")
-        hists4[hist].DrawNormalized('hist&same')
+        hists3[hist].DrawNormalized('hist&same')
 
 c.SaveAs("CombinedPhi_b.png")
 c.SaveAs("CombinedPhi_b.root")
@@ -268,7 +268,7 @@ for hist in range(len(hists4)):
     print(hist)
     if hist==0:
         hists4[hist].SetXTitle("#eta_(b)")
-        hists4[hist].SetYTitle("Events")
+        hists4[hist].SetYTitle("")
         hists4[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
         #hists[hist].SetMaximum(2)
@@ -277,7 +277,7 @@ for hist in range(len(hists4)):
 
     else:
         hists4[hist].SetXTitle("#eta_(b)")
-        hists4[hist].SetYTitle("Events")
+        hists4[hist].SetYTitle("")
         hists4[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
         #hists[hist].SetMaximum(2)
@@ -293,7 +293,7 @@ for hist in range(len(hists5)):
     print(hist)
     if hist==0:
         hists5[hist].SetXTitle("p_{T}(b)[GeV]")
-        hists5[hist].SetYTitle("Events")
+        hists5[hist].SetYTitle("")
         hists5[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
         #hists[hist].SetMaximum(2)
@@ -302,7 +302,7 @@ for hist in range(len(hists5)):
 
     else:
         hists5[hist].SetXTitle("p_{T}(b)[GeV]")
-        hists5[hist].SetYTitle("Events")
+        hists5[hist].SetYTitle("")
         hists5[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
         #hists[hist].SetMaximum(2)
@@ -318,7 +318,7 @@ for hist in range(len(hists6)):
     print(hist)
     if hist==0:
         hists6[hist].SetXTitle("#phi_(bbar)")
-        hists6[hist].SetYTitle("Events")
+        hists6[hist].SetYTitle("")
         hists6[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
         #hists[hist].SetMaximum(2)
@@ -327,7 +327,7 @@ for hist in range(len(hists6)):
 
     else:
         hists6[hist].SetXTitle("#phi_(bbar)")
-        hists6[hist].SetYTitle("Events")
+        hists6[hist].SetYTitle("")
         hists6[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
         #hists[hist].SetMaximum(2)
@@ -343,7 +343,7 @@ for hist in range(len(hists7)):
     print(hist)
     if hist==0:
         hists7[hist].SetXTitle("#eta_(bbar)")
-        hists7[hist].SetYTitle("Events")
+        hists7[hist].SetYTitle("")
         hists7[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
         #hists[hist].SetMaximum(2)
@@ -352,7 +352,7 @@ for hist in range(len(hists7)):
 
     else:
         hists7[hist].SetXTitle("#eta_(bbar)")
-        hists7[hist].SetYTitle("Events")
+        hists7[hist].SetYTitle("")
         hists7[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
         #hists[hist].SetMaximum(2)
@@ -368,7 +368,7 @@ for hist in range(len(hists8)):
     print(hist)
     if hist==0:
         hists8[hist].SetXTitle("p_{T}(bbar)[GeV]")
-        hists8[hist].SetYTitle("Events")
+        hists8[hist].SetYTitle("")
         hists8[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
         #hists[hist].SetMaximum(2)
@@ -377,7 +377,7 @@ for hist in range(len(hists8)):
 
     else:
         hists8[hist].SetXTitle("p_{T}(bbar)[GeV]")
-        hists8[hist].SetYTitle("Events")
+        hists8[hist].SetYTitle("")
         hists8[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
         #hists[hist].SetMaximum(2)
@@ -393,7 +393,7 @@ for hist in range(len(hists9)):
     print(hist)
     if hist==0:
         hists9[hist].SetXTitle("#phi_(a)")
-        hists9[hist].SetYTitle("Events")
+        hists9[hist].SetYTitle("")
         hists9[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
         #hists[hist].SetMaximum(2)
@@ -402,7 +402,7 @@ for hist in range(len(hists9)):
 
     else:
         hists9[hist].SetXTitle("#phi_(a)")
-        hists9[hist].SetYTitle("Events")
+        hists9[hist].SetYTitle("")
         hists9[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
         #hists[hist].SetMaximum(2)
@@ -418,7 +418,7 @@ for hist in range(len(hists10)):
     print(hist)
     if hist==0:
         hists10[hist].SetXTitle("#eta_(a)")
-        hists10[hist].SetYTitle("Events")
+        hists10[hist].SetYTitle("")
         hists10[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
         #hists[hist].SetMaximum(2)
@@ -427,7 +427,7 @@ for hist in range(len(hists10)):
 
     else:
         hists10[hist].SetXTitle("#eta_(a)")
-        hists10[hist].SetYTitle("Events")
+        hists10[hist].SetYTitle("")
         hists10[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
         #hists[hist].SetMaximum(2)
@@ -443,7 +443,7 @@ for hist in range(len(hists11)):
     print(hist)
     if hist==0:
         hists11[hist].SetXTitle("p_{T}(a)[GeV]")
-        hists11[hist].SetYTitle("Events")
+        hists11[hist].SetYTitle("")
         hists11[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
         #hists[hist].SetMaximum(2)
@@ -452,7 +452,7 @@ for hist in range(len(hists11)):
 
     else:
         hists11[hist].SetXTitle("p_{T}(a)[GeV]")
-        hists11[hist].SetYTitle("Events")
+        hists11[hist].SetYTitle("")
         hists11[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
         #hists[hist].SetMaximum(2)
