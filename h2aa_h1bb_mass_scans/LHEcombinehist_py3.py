@@ -252,7 +252,11 @@ for hist in range(len(hists3)):
 
     else:
         hists3[hist].SetXTitle("#phi_(b)")
+<<<<<<< HEAD
         hists3[hist].SetYTitle("")
+=======
+        hists3[hist].SetYTitle("Events")
+>>>>>>> 0cf05a0add18ff3b407458bfc64069c1a2f94d77
         hists3[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
         #hists[hist].SetMaximum(2)
