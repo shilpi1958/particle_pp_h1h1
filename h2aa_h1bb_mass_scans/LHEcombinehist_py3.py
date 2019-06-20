@@ -252,12 +252,12 @@ for hist in range(len(hists3)):
 
     else:
         hists3[hist].SetXTitle("#phi_(b)")
-        hists4[hist].SetYTitle("Events")
-        hists4[hist].SetLineColor(hist+1)
+        hists3[hist].SetYTitle("Events")
+        hists3[hist].SetLineColor(hist+1)
         #hists[hist].SetLineWidth(3)
         #hists[hist].SetMaximum(2)
         #legend.AddEntry(hists[hist],leg_entry[hist],"L")
-        hists4[hist].DrawNormalized('hist&same')
+        hists3[hist].DrawNormalized('hist&same')
 
 c.SaveAs("CombinedPhi_b.png")
 c.SaveAs("CombinedPhi_b.root")
