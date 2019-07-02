@@ -118,7 +118,7 @@ for i in runs:
     a_eta=[]
     a_phi=[]
 
-    h_m_H1=TH1F('run_'+i,"H3(1MeV)",100,0,1000)
+    h_m_H1=TH1F('run_'+i,"H3(1MeV)",100,750,850)
     h_m_H2=TH1F('run_'+i,"H3(1MeV)",100,100,150)
 
     h_b_pT=TH1F('run_'+i,"H3(1MeV)",100,0,600)
